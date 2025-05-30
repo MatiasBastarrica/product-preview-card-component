@@ -12,3 +12,17 @@
   --ff-montserrat: "Montserrat", sans-serif;
   --ff-fraunces: "Fraunces", serif;
 }
+
+/* ### CSS RESET ### */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
