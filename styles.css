@@ -27,7 +27,15 @@ img {
   height: auto;
 }
 
-/* TYPOGRAPHY */
+/* ### UTILITIES ### */
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacer);
+}
+
+/* ### TYPOGRAPHY ### */
 
 body {
   font-family: var(--ff-montserrat);
@@ -41,20 +49,24 @@ body {
 
 h1 {
   color: var(--black);
-  font-size: 2.5rem;
+  line-height: 1.2em;
 }
 
 h1,
 .current-price {
   font-family: var(--ff-fraunces);
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 1.9rem;
 }
 
 .card-subtitle {
   text-transform: uppercase;
-  letter-spacing: 0.6rem;
-  font-size: 1rem;
+  letter-spacing: 0.4rem;
+  font-size: 0.8rem;
+}
+
+.card-paragraph {
+  line-height: 1.5rem;
 }
 
 .current-price {
@@ -68,6 +80,7 @@ h1,
 
 .card-btn {
   color: var(--white);
+  font-size: 0.9rem;
   font-weight: 700;
   background-color: var(--green-500);
   cursor: pointer;
@@ -75,4 +88,44 @@ h1,
 
 .card-btn:hover {
   background-color: var(--green-700);
+}
+/* ### CARD ### */
+
+body {
+  background-color: var(--cream);
+  padding: 3rem 2rem;
+}
+
+.card {
+  --spacer: 1em;
+  background-color: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-main {
+  --spacer: 1em;
+  padding: 1.5em;
+}
+
+.price-container p {
+  margin-top: 0.8em;
+  display: flex;
+  align-items: center;
+  gap: 1.6em;
+}
+
+.card-btn {
+  display: flex;
+  gap: 0.6em;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 7px;
+  padding: 1em 0;
+}
+
+.card-btn img {
+  width: 16px;
+  height: 16px;
 }
