@@ -26,3 +26,53 @@ img {
   display: block;
   height: auto;
 }
+
+/* TYPOGRAPHY */
+
+body {
+  font-family: var(--ff-montserrat);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.card {
+  color: var(--grey);
+}
+
+h1 {
+  color: var(--black);
+  font-size: 2.5rem;
+}
+
+h1,
+.current-price {
+  font-family: var(--ff-fraunces);
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.card-subtitle {
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+  font-size: 1rem;
+}
+
+.current-price {
+  color: var(--green-500);
+}
+
+.card-subtitle,
+.old-price {
+  font-weight: 700;
+}
+
+.card-btn {
+  color: var(--white);
+  font-weight: 700;
+  background-color: var(--green-500);
+  cursor: pointer;
+}
+
+.card-btn:hover {
+  background-color: var(--green-700);
+}
