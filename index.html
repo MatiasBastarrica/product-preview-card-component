@@ -23,11 +23,17 @@
   </head>
   <body>
     <main>
-      <article class="card column">
-        <img
-          src="./images/image-product-mobile.jpg"
-          alt="Gabrielle Chanel Perfume."
-        />
+      <article class="card row">
+        <picture>
+          <source
+            media="(min-width: 725px)"
+            srcset="./images/image-product-desktop.jpg"
+          />
+          <img
+            src="./images/image-product-mobile.jpg"
+            alt="Gabrielle Chanel Perfume."
+          />
+        </picture>
         <div class="card-main column">
           <p class="card-subtitle">Perfume</p>
           <h1 class="card-title">Gabrielle Essence Eau De Parfum</h1>

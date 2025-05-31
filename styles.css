@@ -40,7 +40,7 @@ img {
 body {
   font-family: var(--ff-montserrat);
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: clamp(0.9rem, 1vw + 0.8rem, 1rem);
 }
 
 .card {
@@ -49,20 +49,20 @@ body {
 
 h1 {
   color: var(--black);
-  line-height: 1.2em;
+  line-height: 1.1em;
 }
 
 h1,
 .current-price {
   font-family: var(--ff-fraunces);
   font-weight: 700;
-  font-size: 1.9rem;
+  font-size: clamp(1.9rem, 1vw + 2rem, 2.3rem);
 }
 
 .card-subtitle {
   text-transform: uppercase;
   letter-spacing: 0.4rem;
-  font-size: 0.8rem;
+  font-size: clamp(0.8rem, 1vw + 0.8rem, 0.9rem);
 }
 
 .card-paragraph {
@@ -80,7 +80,7 @@ h1,
 
 .card-btn {
   color: var(--white);
-  font-size: 0.9rem;
+  font-size: clamp(0.9rem, 1vw + 0.8rem, 1rem);
   font-weight: 700;
   background-color: var(--green-500);
   cursor: pointer;
@@ -93,6 +93,9 @@ h1,
 
 body {
   background-color: var(--cream);
+}
+
+main {
   padding: 3rem 2rem;
 }
 
@@ -103,6 +106,15 @@ body {
   overflow: hidden;
 }
 
+.card picture {
+  margin-bottom: 1em;
+}
+
+.card-btn img {
+  width: 16px;
+  height: 16px;
+}
+
 .card-main {
   --spacer: 1em;
   padding: 1.5em;
@@ -111,8 +123,9 @@ body {
 .price-container p {
   margin-top: 0.8em;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 1.6em;
+  gap: 1.4em;
 }
 
 .card-btn {
@@ -122,10 +135,39 @@ body {
   align-items: center;
   border: none;
   border-radius: 7px;
-  padding: 1em 0;
+  padding: 0.85em 0;
 }
 
-.card-btn img {
-  width: 16px;
-  height: 16px;
+/* ### MEDIA QUERIES ### */
+
+@media (min-width: 725px) {
+  main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .card {
+    width: 42em;
+    flex-shrink: 0;
+  }
+
+  .card > * {
+    width: 50%;
+  }
+
+  .card-main {
+    justify-content: space-between;
+    /* --spacer: 1.8em; */
+    padding: 2em;
+  }
+
+  .card picture {
+    margin: 0;
+  }
 }
