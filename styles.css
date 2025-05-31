@@ -140,7 +140,7 @@ main {
 
 /* ### MEDIA QUERIES ### */
 
-@media (min-width: 725px) {
+@media (min-width: 45.313em) {
   main {
     height: 100vh;
     display: flex;
