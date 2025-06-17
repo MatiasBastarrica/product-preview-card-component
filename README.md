@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [My Solution](https://www.frontendmentor.io/solutions/product-card-component-using-flexbox-vgI4-ufxGp)
 - Live Site URL: [Live version](https://matiasbastarrica.github.io/product-preview-card-component/)
 
 ## My process
